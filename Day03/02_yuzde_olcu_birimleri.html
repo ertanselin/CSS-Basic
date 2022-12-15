@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        width: 50%;
+        height: 200px; 
+        background-color: aqua;
+      }
+
+/* block element satırın tamamını kaplıyor diyoruz. Yani tüm html elementlerinin default olarak bir 
+weight değeri vardır ama default olarak hiç bir elementin heigt değeri yoktur. O yüzden içi boş bir 
+elemente %xx kadar yer kapla dediğimizde neyin yüzdesi bilinmediğinden sayfa da gözükmez. Bu nedenle 
+genellikle parent'ın height değerine px (sabit) bir değer veririz.  */
+
+      .kutu1 {
+        width: 50%;
+        height: 50%;
+        background-color: coral;
+      }
+      .kutu2 {
+        width: 20%;
+        height: 20%;
+        background-color: crimson;
+      }
+      .kutu3 {
+        width: 30%;
+        height: 30%;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="kutu1"></div>
+    </div>
+    <div class="parent">
+      <div class="kutu2"></div>
+    </div>
+    <div class="parent">
+      <div class="kutu3"></div>
+    </div>
+  </body>
+</html>
